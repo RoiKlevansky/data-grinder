@@ -2,7 +2,7 @@
 </br>
 <div align="center">
     <img src="assets/icon.png" alt="logo" width="80" heigh="80">
-    <h3 style="font-size:2em;" align="center">Data Grinder</h3>
+    <h3 align="center">Data Grinder</h3>
     <p align="center">WhatsApp bot that makes cool graphs out of saved WhatApp records.</p>
 </div>
 
