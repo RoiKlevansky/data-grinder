@@ -3,15 +3,26 @@ Data Grinder is a WhatsApp bot that stores all records of messages, chats and pa
 
 **NOTE:** This bot will require the WhatsApp's multiuser-beta and uses a development branch of "whatsapp-web.js" which may result in some bugs and issues.
 
-# Getting started
+## Table of contents
+- [Data Grinder](#data-grinder)
+  - [Table of contents](#table-of-contents)
+  - [Getting started](#getting-started)
+    - [Dependencies](#dependencies)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contact](#contact)
+  - [Acknowledgments](#acknowledgments)
 
-## Dependencies
+## Getting started
+
+### Dependencies
 * Google Chrome/Chromium v60.0+  
 * Node.js    
 * npm  
 * PostgreSQL(doesn't have to be local)  
 
-## Installation
+### Installation
 You may follow this instructions:
 1. Clone the repo and cd into it
 ```bash
@@ -24,18 +35,18 @@ npm install
 ```
 3. Create .env file and fill it
 
-# Usage
+## Usage
 After you finished the installation and you're done with the configuration to start the bot using this command:
 ```bash
 npm start
 ```
 
-# License
+## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-# Contact
+## Contact
 Roi Klevansky - roiklevansky@gmail.com  
 Project Link: [https://github.com/RoiKlevansky/data-grinder](https://github.com/RoiKlevansky/data-grinder)
 
-# Acknowledgments
+## Acknowledgments
 * [whatsapp-js.web](https://github.com/pedroslopez/whatsapp-web.js)
