@@ -1,10 +1,10 @@
+import { ChartConfiguration, ChartData } from 'chart.js';
 import { ChartJSNodeCanvas } from 'chartjs-node-canvas';
+import * as chartjsPluginDatalabels from 'chartjs-plugin-datalabels';
 import Jimp from 'jimp';
 import { getRepository, Repository } from 'typeorm';
 import wa from 'whatsapp-web.js';
 import { Contact } from '../entities/Contact';
-import * as chartjsPluginDatalabels from 'chartjs-plugin-datalabels';
-import { ChartConfiguration, ChartData } from 'chart.js';
 
 const typeColors: Record<string, string> = {
     [wa.MessageTypes.TEXT]: '#00ff00',

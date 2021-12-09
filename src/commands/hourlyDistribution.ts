@@ -1,7 +1,7 @@
 import { ChartConfiguration } from 'chart.js';
 import { ChartJSNodeCanvas } from 'chartjs-node-canvas';
 import Jimp from 'jimp';
-import { Repository, getRepository } from 'typeorm';
+import { getRepository, Repository } from 'typeorm';
 import wa from 'whatsapp-web.js';
 import { Contact } from '../entities/Contact';
 

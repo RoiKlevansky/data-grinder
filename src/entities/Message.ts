@@ -5,7 +5,7 @@ import { Contact } from "./Contact";
 
 @Entity()
 export class Message {
-  
+
   @PrimaryColumn()
   id: string;
 

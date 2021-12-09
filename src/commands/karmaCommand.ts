@@ -2,7 +2,6 @@ import Jimp from "jimp";
 import { getRepository } from "typeorm";
 import wa from "whatsapp-web.js";
 import { Contact } from "../entities/Contact";
-import settings from "../config/config";
 import { removeEmojis, reverseHe } from "../utils/stringUtils";
 
 /**
@@ -79,7 +78,7 @@ export const karmaCommand = async (msg: wa.Message): Promise<void> => {
   if (!contactEntry) {
     return;
   }
-  
+
   const background: Jimp = await Jimp.read("./assets/karma-background.png");
   const karma: number = contactEntry ? contactEntry.karma : 0;
   const backgroundMask = await Jimp.read('./assets/background-mask.png');
@@ -89,7 +88,7 @@ export const karmaCommand = async (msg: wa.Message): Promise<void> => {
   await drawProfilePic(background, profilePicUrl, 0.6, 0.6, 0.2, 0.05);
   await printName(background, contactEntry.name, 0, 0.675);
   await printKarma(background, karma.toString() + " karma", 0, 0.8);
-  
+
   const result = (await background.getBase64Async(Jimp.MIME_PNG)).split(',')[1];
   await msg.reply(new wa.MessageMedia(Jimp.MIME_PNG, result, 'karma.png'), undefined, { sendMediaAsSticker: true });
 }

@@ -17,7 +17,7 @@ export class Chat {
   @ManyToMany(() => Contact, contact => contact.chats)
   @JoinTable()
   participants: Contact[];
-  
+
   @OneToMany(() => Message, message => message.chat)
   messages: Message[];
 }

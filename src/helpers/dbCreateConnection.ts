@@ -1,6 +1,6 @@
 import { Connection, createConnection } from 'typeorm';
-
 import settings from '../config/config';
+
 
 export const dbCreateConnection = async (): Promise<Connection> => {
   const conn = await createConnection({

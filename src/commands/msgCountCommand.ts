@@ -1,12 +1,12 @@
+import { ChartConfiguration } from 'chart.js';
 import { ChartJSNodeCanvas } from 'chartjs-node-canvas';
+import Jimp from 'jimp';
 import { getRepository, Repository } from 'typeorm';
 import wa from 'whatsapp-web.js';
 import { Contact } from '../entities/Contact';
-import Jimp from 'jimp';
-import { ChartConfiguration } from 'chart.js';
 
 export const msgCountCommand = async (msg: wa.Message) => {
-    
+
 
     const contactRepository: Repository<Contact> = getRepository(Contact);
     const contact = await msg.getContact();
